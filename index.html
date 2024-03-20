@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>drawing website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="paintBtn">
+        <input type="button" class="colorBtn" id="colorBlack" />
+        <input type="button" class="colorBtn" id="colorRed" />
+        <input type="button" class="colorBtn" id="colorOrange" />
+        <input type="button" class="colorBtn" id="colorBlue" />
+        <input type="button" class="colorBtn" id="colorBrown" />
+        <input type="button" class="colorBtn" id="colorGreen" />
+        <input type="button" class="colorBtn" id="colorYellow" />
+        <input type="button" class="colorBtn" id="colorWhite" />
+
+        <input type="button" class="colorBoxBtn" id="clearBtn" value="Clear" />
+        <input type="button" class="colorBoxBtn" id="saveBtn" value="Save" />
+
+        <input type="color" class="colorSetBtn" id="colorSetBtn" />
+        <div class="colorRange">
+          <input
+            type="range"
+            class="Range"
+            id="Range"
+            min="1"
+            max="5"
+            step="1"
+            onchange="brushWidthChange()"
+          />
+          <span class="rangeValue" id="rangeValue">3</span>
+        </div>
+        <img
+          src="https://i.ibb.co/0CydcQ5/paint-palette.png"
+          alt="paint-palette"
+          class="paintImg"
+        />
+      </div>
+      <canvas class="canvasBox" id="canvasBox"></canvas>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
